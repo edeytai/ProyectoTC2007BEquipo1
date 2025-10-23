@@ -1,0 +1,12 @@
+// Exportar componentes de las secciones
+export { Seccion1DatosServicio } from './Seccion1DatosServicio';
+export { Seccion2DatosPaciente } from './Seccion2DatosPaciente';
+export { Seccion3Parto } from './SeccionesSimplificadas';
+export { Seccion4CausaTraumatica } from './SeccionesSimplificadas';
+export { Seccion5CausaClinica } from './SeccionesSimplificadas';
+export { Seccion6EvaluacionInicial } from './SeccionesSimplificadas';
+export { Seccion7ExploracionFisica } from './SeccionesSimplificadas';
+export { Seccion8SignosVitales } from './SeccionesSimplificadas';
+export { Seccion9Traslado } from './SeccionesSimplificadas';
+export { Seccion10Tratamiento } from './SeccionesSimplificadas';
+export { Seccion11DatosLegales } from './SeccionesSimplificadas';
