@@ -1,0 +1,454 @@
+{
+  "ra": {
+    "page": {
+      "dashboard": "Panel Principal",
+      "not_found": "Página no encontrada",
+      "error": "Error",
+      "list": "Listado",
+      "edit": "Editar",
+      "create": "Crear",
+      "show": "Ver"
+    },
+    "auth": {
+      "auth_check_error": "Por favor inicie sesión",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión",
+      "username": "Usuario",
+      "password": "Contraseña"
+    },
+    "action": {
+      "add": "Añadir",
+      "add_filter": "Añadir filtro",
+      "back": "Volver",
+      "bulk_actions": "1 item seleccionado |||| %{smart_count} items seleccionados",
+      "cancel": "Cancelar",
+      "clear_array_input": "Limpiar la lista",
+      "clear_input_value": "Limpiar valor",
+      "clone": "Clonar",
+      "close": "Cerrar",
+      "close_menu": "Cerrar menú",
+      "confirm": "Confirmar",
+      "create": "Crear",
+      "create_item": "Crear %{item}",
+      "delete": "Eliminar",
+      "edit": "Editar",
+      "expand": "Expandir",
+      "export": "Exportar",
+      "list": "Listado",
+      "move_down": "Mover abajo",
+      "move_up": "Mover arriba",
+      "open": "Abrir",
+      "open_menu": "Abrir menú",
+      "refresh": "Refrescar",
+      "remove": "Borrar",
+      "remove_filter": "Borrar este filtro",
+      "remove_all_filters": "Borrar todos los filtros",
+      "reset": "Restablecer",
+      "save": "Guardar",
+      "search": "Buscar",
+      "search_columns": "Buscar columnas",
+      "select_all": "Seleccionar todo",
+      "select_all_button": "Seleccionar todo",
+      "select_columns": "Columnas",
+      "select_row": "Seleccionar esta fila",
+      "show": "Ver",
+      "sort": "Ordenar",
+      "toggle_theme": "Cambiar tema claro/oscuro",
+      "undo": "Deshacer",
+      "unselect": "Deseleccionar",
+      "update": "Actualizar",
+      "update_application": "Recargar aplicación",
+      "approve": "Aprobar",
+      "sendForReview": "Enviar a revision"
+    },
+    "message": {
+      "delete_title": "Eliminar",
+      "delete_content": "¿Está seguro que desea eliminar este elemento?",
+      "error": "Ha ocurrido un error",
+      "clear_array_input": "¿Está seguro que desea limpiar la lista completa?"
+    },
+    "notification": {
+      "updated": "Elemento actualizado |||| %{smart_count} elementos actualizados",
+      "created": "Elemento creado",
+      "deleted": "Elemento eliminado |||| %{smart_count} elementos eliminados",
+      "bad_item": "Elemento incorrecto",
+      "item_doesnt_exist": "El elemento no existe",
+      "http_error": "Error de comunicación con el servidor",
+      "data_provider_error": "Error del proveedor de datos. Revise la consola para más detalles.",
+      "i18n_error": "No se pueden cargar las traducciones para el idioma especificado",
+      "canceled": "Acción cancelada",
+      "logged_out": "Su sesión ha terminado, por favor reconéctese.",
+      "not_authorized": "No está autorizado para acceder a este recurso."
+    },
+    "configurable": {
+      "customize": "Personalizar"
+    },
+    "navigation": {
+      "no_results": "No se encontraron resultados",
+      "page_out_of_boundaries": "Página fuera de límites",
+      "page_out_from_end": "No puede ir más allá de la última página",
+      "page_out_from_begin": "No puede ir antes de la página 1",
+      "page_range_info": "%{offsetBegin}-%{offsetEnd} de %{total}",
+      "page_rows_per_page": "Filas por página:",
+      "next": "Siguiente",
+      "prev": "Anterior"
+    },
+    "validation": {
+      "required": "Dato requerido",
+      "minValue": "Valor menor al permitido",
+      "maxValue": "Valor mayor al permitido",
+      "number": "Se requiere un numero",
+      "email": "Formato de correo no valido"
+    },
+    "sort": {
+      "sort_by": "Ordenar por %{field} %{order}",
+      "ASC": "ascendente",
+      "DESC": "descendente"
+    }
+  },
+  "dashboard": {
+    "title": "Sistema de Gestión de Emergencias Urbanas",
+    "currentUser": "Usuario actual",
+    "role": "Rol",
+    "yourPermissions": "Tus permisos",
+    "roles": {
+      "brigadista": {
+        "description": "Registra emergencias urbanas y solo ve sus propios reportes",
+        "permissions": [
+          "Crear nuevos incidentes",
+          "Clasificar emergencias por tipo",
+          "Ver SOLO sus propios incidentes",
+          "Editar sus incidentes en borrador",
+          "NO puede ver reportes/estadísticas",
+          "NO puede aprobar/cerrar",
+          "NO puede ver alertas del sistema"
+        ]
+      },
+      "coordinador": {
+        "description": "Aprueba reportes, ve estadísticas y gestiona emergencias",
+        "permissions": [
+          "Ver TODOS los incidentes",
+          "Aprobar y cerrar reportes",
+          "Ver tablero con estadísticas",
+          "Filtrar emergencias",
+          "Recibir alertas de emergencias graves",
+          "Generar reportes PDF/Excel",
+          "Ver historial completo"
+        ]
+      },
+      "autoridad": {
+        "description": "Consulta histórico completo y visualiza reportes (solo lectura)",
+        "permissions": [
+          "Consultar histórico completo",
+          "Ver reportes y estadísticas",
+          "Visualizar mapas de incidencias",
+          "Recibir informes automáticos",
+          "NO puede crear incidentes",
+          "NO puede editar",
+          "NO puede cambiar estados"
+        ]
+      },
+      "admin": {
+        "description": "Acceso completo: gestiona usuarios, catálogos y todo el sistema",
+        "permissions": [
+          "Acceso total al sistema",
+          "Gestionar usuarios y roles",
+          "Configurar catálogos oficiales",
+          "Monitorear rendimiento",
+          "Todas las funciones anteriores"
+        ]
+      }
+    }
+  },
+  "resources": {
+    "incidents": {
+      "name": "Incidentes |||| Incidentes",
+      "sections": {
+        "operational": "Datos operativos"
+      },
+      "fields": {
+        "solicitudMitigacion": "Solicitud de mitigacion",
+        "fecha": "Fecha (ISO)",
+        "hora": "Hora (HH:mm)",
+        "turno": "Turno",
+        "modoActivacion": "Modo de activacion",
+        "personalACargo": "Personal a cargo",
+        "horaAtencion": "Hora de atencion (HH:mm)",
+        "tiempoTrasladoMin": "Tiempo de traslado (min)",
+        "kmsRecorridos": "Kilometros recorridos",
+        "ubicacion": "Ubicacion",
+        "ubicacion.calle": "Calle",
+        "ubicacion.colonia": "Colonia",
+        "ubicacion.referencias": "Referencias",
+        "nivelGravedad": "Nivel de gravedad",
+        "trabajosRealizados": "Trabajos realizados",
+        "observaciones": "Observaciones",
+        "conclusionDictamen": "Conclusion / Dictamen",
+        "dependencias": "Dependencias intervinientes",
+        "autoridadesIntervinientes": "Autoridades intervinientes",
+        "responsableInmueble": "Responsable del inmueble",
+        "tipoEmergencia": "Tipo de emergencia",
+        "estadoReporte": "Estado del reporte",
+        "creadoPor": "Creado por",
+        "actualizadoPor": "Actualizado por",
+        "createdAt": "Creado el",
+        "updatedAt": "Actualizado el"
+      }
+    },
+    "catalogs": {
+      "name": "Catalogos oficiales"
+    },
+    "reports": {
+      "name": "Reportes y estadisticas"
+    },
+    "alerts": {
+      "name": "Alertas operativas"
+    },
+    "history": {
+      "name": "Historico"
+    }
+  },
+  "commons": {
+    "status": {
+      "draft": "Borrador",
+      "en_revision": "En revision",
+      "aprobado": "Aprobado",
+      "cerrado": "Cerrado"
+    },
+    "severity": {
+      "baja": "Baja",
+      "media": "Media",
+      "alta": "Alta"
+    },
+    "turno": {
+      "matutino": "Matutino",
+      "vespertino": "Vespertino",
+      "nocturno": "Nocturno"
+    },
+    "activation": {
+      "llamada": "Llamada",
+      "oficio": "Oficio"
+    },
+    "validation": {
+      "date_format": "Formato no valido (ISO)",
+      "time_format": "Formato no valido (HH:mm)",
+      "km_range": "kmsRecorridos debe ser >= 0 y < 1000",
+      "transfer_time": "tiempoTrasladoMin debe ser >= 0",
+      "temporal_consistency": "Inconsistencia temporal: horaAtencion < hora"
+    },
+    "incidents": {
+      "name": "Incidentes |||| Incidentes"
+    },
+    "reports": {
+      "name": "Reportes y Estadísticas |||| Reportes y Estadísticas"
+    },
+    "alerts": {
+      "name": "Alertas Operativas |||| Alertas Operativas"
+    },
+    "history": {
+      "name": "Historial de Actividades |||| Historial de Actividades"
+    },
+    "catalogs": {
+      "name": "Catálogos |||| Catálogos"
+    },
+    "users": {
+      "name": "Usuarios |||| Usuarios"
+    }
+  },
+  "users": {
+    "fields": {
+      "username": "Nombre de usuario",
+      "password": "Contraseña",
+      "newPassword": "Nueva contraseña",
+      "fullName": "Nombre completo",
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "department": "Departamento",
+      "phone": "Teléfono",
+      "active": "Usuario activo",
+      "createdAt": "Fecha de creación",
+      "lastLogin": "Último acceso"
+    },
+    "sections": {
+      "personalInfo": "Información personal",
+      "accessInfo": "Información de acceso",
+      "roleConfig": "Configuración de rol",
+      "stats": "Estadísticas del usuario"
+    },
+    "roles": {
+      "brigadista": "Brigadista",
+      "coordinador": "Coordinador",
+      "autoridad": "Autoridad",
+      "admin": "Administrador",
+      "descriptions": {
+        "brigadista": "Brigadista - Crear y editar reportes en borrador",
+        "coordinador": "Coordinador - Aprobar y gestionar todos los reportes",
+        "autoridad": "Autoridad - Solo lectura de reportes",
+        "admin": "Administrador - Acceso completo al sistema"
+      }
+    },
+    "departments": {
+      "proteccion_civil": "Protección Civil",
+      "bomberos": "Bomberos",
+      "seguridad": "Seguridad",
+      "servicios_urbanos": "Servicios Urbanos",
+      "administracion": "Administración"
+    },
+    "filters": {
+      "search": "Buscar",
+      "role": "Rol",
+      "state": "Estado",
+      "active": "Activo",
+      "inactive": "Inactivo"
+    },
+    "messages": {
+      "passwordHelp": "Dejar en blanco para mantener la contraseña actual",
+      "roleHelp": "Seleccione el rol del usuario. Esto determina sus permisos en el sistema.",
+      "roleChangeWarning": "Advertencia: Cambiar el rol afectará los permisos del usuario inmediatamente."
+    }
+  },
+  "incidents": {
+    "sections": {
+      "operational": "Datos operativos",
+      "attention": "Atención de la emergencia",
+      "location": "Ubicación",
+      "classification": "Clasificación de la emergencia",
+      "results": "Resultados del servicio",
+      "participants": "Participantes"
+    },
+    "actions": {
+      "title": "Acciones",
+      "sendToReview": "Enviar a revisión",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "close": "Cerrar",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar"
+    },
+    "confirmations": {
+      "submit": {
+        "title": "Confirmar envío a revisión",
+        "message": "¿Está seguro que desea enviar este incidente a revisión? Una vez enviado, no podrá editarlo hasta que sea rechazado."
+      },
+      "approve": {
+        "title": "Confirmar aprobación",
+        "message": "¿Está seguro que desea aprobar este incidente? Esta acción registrará el incidente como aprobado oficialmente."
+      },
+      "reject": {
+        "title": "Confirmar rechazo",
+        "message": "¿Está seguro que desea rechazar este incidente? El incidente volverá a estado borrador y el brigadista deberá corregirlo."
+      },
+      "close": {
+        "title": "Confirmar cierre",
+        "message": "¿Está seguro que desea cerrar este incidente? Esta acción es final y no se podrá revertir."
+      }
+    },
+    "notifications": {
+      "stateChanged": "Estado cambiado a %{state}",
+      "stateChangeError": "Error al cambiar estado",
+      "states": {
+        "draft": "borrador",
+        "en_revision": "en revisión",
+        "aprobado": "aprobado",
+        "cerrado": "cerrado"
+      }
+    },
+    "fields": {
+      "solicitudMitigacion": "Solicitud de mitigación",
+      "fecha": "Fecha",
+      "hora": "Hora",
+      "turno": "Turno",
+      "modoActivacion": "Modo de activación",
+      "personalACargo": "Personal a cargo",
+      "horaAtencion": "Hora de atención",
+      "tiempoTrasladoMin": "Tiempo de traslado (min)",
+      "kmsRecorridos": "Kilómetros recorridos",
+      "tipoEmergencia": "Tipo de emergencia",
+      "nivelGravedad": "Nivel de gravedad",
+      "estadoReporte": "Estado del reporte",
+      "trabajosRealizados": "Trabajos realizados",
+      "trabajo": "Trabajo",
+      "observaciones": "Observaciones",
+      "conclusionDictamen": "Conclusión o dictamen",
+      "dependencias": "Dependencias",
+      "dependencia": "Dependencia",
+      "autoridadesIntervinientes": "Autoridades intervinientes",
+      "autoridad": "Autoridad",
+      "responsableInmueble": "Responsable del inmueble",
+      "metadata": "Metadatos",
+      "motivo": {
+        "label": "Motivo del rechazo",
+        "placeholder": "Ej: Información incompleta, datos incorrectos..."
+      },
+      "ubicacion": {
+        "lat": "Latitud",
+        "lng": "Longitud",
+        "calle": "Calle",
+        "colonia": "Colonia",
+        "referencias": "Referencias"
+      },
+      "turno": {
+        "matutino": "Matutino",
+        "vespertino": "Vespertino",
+        "nocturno": "Nocturno"
+      },
+      "modoActivacion": {
+        "llamada": "Llamada",
+        "oficio": "Oficio"
+      },
+      "tipoEmergencia": {
+        "inundacion": "Inundación",
+        "incendio": "Incendio",
+        "socavon": "Socavón",
+        "deslave": "Deslave",
+        "sismo": "Sismo",
+        "fuga": "Fuga",
+        "otro": "Otro"
+      },
+      "nivelGravedad": {
+        "baja": "Baja",
+        "media": "Media",
+        "alta": "Alta"
+      },
+      "estadoReporte": {
+        "draft": "Borrador",
+        "en_revision": "En revisión",
+        "aprobado": "Aprobado",
+        "cerrado": "Cerrado"
+      }
+    },
+    "permissions": {
+      "noEdit": "No tienes permisos para editar este incidente"
+    },
+    "location": {
+      "title": "Seleccionar ubicación en el mapa",
+      "noSupport": "Tu navegador no soporta geolocalización",
+      "permissionDenied": "Permiso de geolocalización denegado. Por favor, habilita el acceso a tu ubicación en la configuración del navegador.",
+      "unavailable": "Ubicación no disponible en este momento",
+      "timeout": "Tiempo de espera agotado al obtener ubicación",
+      "error": "Error al obtener ubicación",
+      "instructions": "Obtén tu ubicación actual",
+      "clickOrUseButton": "Haz clic en el mapa o usa el botón de ubicación",
+      "useCurrentLocation": "Usar mi ubicación actual"
+    }
+  },
+  "reports": {
+    "title": "Reportes y Estadísticas",
+    "dashboard": {
+      "title": "Panel de Estadísticas",
+      "totalIncidents": "Total de Incidentes",
+      "criticalIncidents": "Incidentes Críticos",
+      "monthIncidents": "Incidentes del Mes"
+    },
+    "export": {
+      "csv": "Exportar CSV",
+      "pdf": "Exportar PDF",
+      "loading": "Generando reporte...",
+      "success": "Reporte generado exitosamente",
+      "error": "Error al generar el reporte",
+      "downloading": "Descargando archivo..."
+    },
+    "byStatus": "Por Estado",
+    "byType": "Por Tipo de Emergencia"
+  }
+}
