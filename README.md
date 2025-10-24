@@ -4,3 +4,6 @@
 - Emiliano Delgadillo Osorio | A01785887
 - Emiliano Deyta Illescas | A01785881
 - Erick Alonso Morales Dieguez | A01029293
+
+
+[Link al repositorio](https://github.com/edeytai/ProyectoTC2007BEquipo1.git)
